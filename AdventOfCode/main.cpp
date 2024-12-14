@@ -1,7 +1,9 @@
 #include "one.h"
-#include <iostream>
 
 int main()
 {
-	std::cout << "Day 1 answer: " + DayOne("among us");
+	std::cout << "Day 1 part 1 answer: " << day_one_part_one() << std::endl;
+	std::cout << "Day 1 part 2 answer: " << day_one_part_two() << std::endl;
+	
+	return 0;
 }
