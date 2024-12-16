@@ -8,7 +8,7 @@ int main()
 
 	std::cout << std::endl;
 
-	std::cout << "Day 2 part 1 answer: " << day_two() << std::endl;
+	std::cout << "Day 2 part 2 answer: " << day_two() << std::endl;
 	
 	return 0;
 }

@@ -13,4 +13,3 @@ bool is_safe(std::vector<int> levels);
 bool is_increasing_or_decreasing(std::vector<int> levels);
 bool is_within_difference(std::vector<int> levels);
 bool can_remove_level(std::vector<int> levels);
-bool is_safe_dampener(std::vector<int> levels);
