@@ -1,7 +1,6 @@
 #include "two.h"
 
-
-int day_two_part_one()
+int day_two()
 {
 	int num_safe_reports = 0;
 
@@ -23,6 +22,13 @@ int day_two_part_one()
 		if (is_safe(levels))
 		{
 			num_safe_reports++;
+		}
+		else
+		{
+			if (can_remove_level(levels))
+			{
+				num_safe_reports++;
+			}
 		}
 	}
 
@@ -73,3 +79,21 @@ bool is_within_difference(std::vector<int> levels)
 
 	return true;
 }
+
+bool can_remove_level(std::vector<int> levels)
+{
+	for (int i = 0; i < levels.size(); i++)
+	{
+		std::vector<int> new_levels = levels;
+		new_levels.erase(new_levels.begin() + i);
+
+		if (is_safe(new_levels))
+		{
+			return true;
+		}
+	}
+
+	return false;
+}
+
+
