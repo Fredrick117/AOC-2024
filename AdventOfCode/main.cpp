@@ -1,5 +1,6 @@
 #include "one.h"
 #include "two.h"
+#include "three.h"
 
 int main()
 {
@@ -9,6 +10,8 @@ int main()
 	std::cout << std::endl;
 
 	std::cout << "Day 2 part 2 answer: " << day_two() << std::endl;
+
+	std::cout << "day 3 test: " << has_valid_mul("mul(1,2)lkajslkdja") << std::endl;
 	
 	return 0;
 }
